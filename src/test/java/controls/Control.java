@@ -12,8 +12,9 @@ public class Control {
         this.locator = locator;
     }
 
-    public void getControl(){
+    public WebElement getControl(){
         control = Session.getInstance().getBrowser().findElement(this.locator);
+        return control;
     }
 
     public void click(){
