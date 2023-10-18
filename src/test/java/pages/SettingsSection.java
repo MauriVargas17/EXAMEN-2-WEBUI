@@ -5,8 +5,9 @@ import controls.TextBox;
 import org.openqa.selenium.By;
 
 public class SettingsSection {
-    public Button settingsButton = new Button(By.xpath("//*[@id=\"ctl00_HeaderTopControl1_PanelHeaderButtons\"]/a[1]"));
+    public Button settingsButton = new Button(By.xpath("//a[text()=\"Settings\"]"));
     public TextBox fullNameTextBox = new TextBox(By.xpath("//*[@id=\"FullNameInput\"]"));
-    public Button okButton = new Button(By.xpath("/html/body/div[9]/div[2]/div/button[1]/span"));
-
+    public Button okButton = new Button(By.xpath("//span[text()=\"Ok\"]"));
+    public TextBox oldP = new TextBox(By.xpath("//input[@id=\"TextPwOld\"]"));
+    public TextBox newP = new TextBox(By.xpath("//input[@id=\"TextPwNew\"]"));
 }
