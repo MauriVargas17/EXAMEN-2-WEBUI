@@ -11,7 +11,7 @@ public class Session {
     private Session(){
         browser = FactoryBrowser.make("chrome").create();
         browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
     }
     public static Session getInstance(){
         if (session == null)
